@@ -36,11 +36,24 @@
 <fieldset>
   <legend>Your Indicators</legend>
   <label for="height">Height:</label>
-  <input type="range" min="0" max="100" id="height" name="height"><br>
+  Short<input type="range" min="0" max="100" id="height" name="height">Tall<br>
   <lable for="salary"> Salary: </label>
-  <input type="range" min="0" max="100" name="salary" id="salary"><br>
+  Poor<input type="range" min="0" max="100" name="salary" id="salary">Rich<br>
 </fieldset>
 
+<fieldset>
+  <legend> Your Contact Information </legend>
+    <label for="Email">Email:</label>
+    <input type="email" name="email" id="email"><br>
+    <label for="tel">Mobile </label>
+    <input type="tel" id="tel" name="tel"><br>
+    <label for="addr">Address:</label>
+    <textarea id="addr" name="addr"> </textarea><br>
+    <label for="contact">Method to contact you:</label>
+    <input type="checkbox" id="contact" name="contact" value="email">Email
+    <input type="checkbox" id="contact" name="contact" value="whatsapp">Whatsapp
+    <input type="checkbox" id="contact" name="contact" value="in-app">In-app chat
+  </fieldset>
 
 </form>
 </body>
