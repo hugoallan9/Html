@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/tasks.css" media="screen"/>
+</head>
+<body>
+  <header>
+    <span> Lista de tareas </span>
+  </header>
+  <main>
+    <main>
+      <section>
+        <form>
+          <div>
+            <label> Tarea</label>
+            <input type="text" required="required" name="task" class="large" placeholder="Desayuno en la Estancia"/>
+          </div>
+          <div>
+            <label>Fecha</label>
+            <input type="date" required="required" name="RequiredBy" />
+          </div>
+          <div>
+            <label>Categoría</label>
+            <select name="category">
+              <option value="Personal">Personal</option>
+              <option value="Work">Trabajo</option>
+            </select>
+          </div>
+          <nav>
+            <a href="#">Guardar Tarea</a><a href="#">Limpiar tarea </a>
+          </nav>
+        </form>
+      </section>
+      <section>
+        <table id="tblTaks">
+          <colgroup>
+            <col width="50%">
+            <col width="25%">
+            <col width="25%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Fecha</th>
+              <th>Categoría</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> Regresar libros a la biblioteca </td>
+              <td> <time datetime="2013-10-14">2013-10-14</time></td>
+              <td> Personal </td>
+            </tr>
+            <tr>
+              <td> Realizar presentación a AMGM </td>
+              <td> <time datetime="2017-03-03">2017-03-03</time></td>
+              <td>Trabajo</td>
+            </tr>
+            <tr>
+              <td> Cena con los amigos </td>
+              <td><time datetime="2017-02-29">2017-02-26</time></td>
+              <td>Personal</td>
+            </tr>
+          </tbody>
+        </table>
+        <nav>
+          <a href="#"> Agregar tarea </a>
+        </nav>
+      </section>
+    </main>
+    <footer> Tienes 3 tareas </footer>
+  </body>
+</html>
